@@ -1351,6 +1351,84 @@ h4 { font-size: 1.1rem; }
   font-weight: 700;
 }
 
+/* ── Image Feature Section ──────────────────────────────────── */
+.image-feature {
+  margin: 32px 0;
+  padding: 24px;
+  background: white;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.image-feature:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--info);
+}
+
+.image-feature img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  display: block;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 2px solid var(--gray-200);
+}
+
+/* ── Stat Boxes ─────────────────────────────────────────────── */
+.stat-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.stat-box {
+  padding: 24px;
+  background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 100%);
+  border: 2px solid #7DD3FC;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, #BAE6FD 0%, #7DD3FC 100%);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--info);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.benefit-emoji {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
 /* ── Video Container ────────────────────────────────────────── */
 .video-container {
   margin: 32px 0;
@@ -1654,6 +1732,62 @@ h4 { font-size: 1.1rem; }
 .site-footer a:hover {
   color: white;
   text-decoration: underline;
+}
+
+/* ── Design Principles Grid ─────────────────────────────── */
+.design-principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 32px 0;
+}
+
+.principle-card {
+  padding: 24px;
+  background: linear-gradient(135deg, white 0%, #F9FAFB 100%);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.principle-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--info);
+}
+
+.principle-card h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.principle-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Craft Steps ────────────────────────────────────────── */
+.craft-steps {
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.craft-steps li {
+  margin-bottom: 16px;
+  padding-left: 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.craft-steps strong {
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 /* ── Responsive Design ──────────────────────────────────────── */
